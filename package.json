@@ -1,0 +1,27 @@
+{
+  "name": "kube-app",
+  "version": "1.0.0",
+  "description": "Quick app for testing kubernetes deployment",
+  "scripts": {
+    "start": "node ./bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhudgens/kube-app.git"
+  },
+  "author": "Benjamin Hudgens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhudgens/kube-app/issues"
+  },
+  "homepage": "https://github.com/bhudgens/kube-app#readme",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "express": "4.17.1",
+    "express-session": "1.17.2"
+  },
+  "engines": {
+    "node": "10.15.1",
+    "npm": "6.4.1"
+  }
+}
