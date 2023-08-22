@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
  * Route Handlers
  ********************************************************************/
 
-["health", "healthz", "diagnostic"].foreach((endpoint) => {
+["health", "healthz", "diagnostic"].forEach((endpoint) => {
   app.get(`/${endpoint}`, (_, res) => res.status(200).end("OK"));
 });
 

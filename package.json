@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Quick app for testing kubernetes deployment",
   "scripts": {
-    "start": "node ./bin/server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "express-session": "1.17.2"
   },
   "engines": {
-    "node": "10.15.1",
-    "npm": "6.4.1"
+    "node": "v18.17.1",
+    "npm": "9.6.7"
   }
 }

@@ -11,17 +11,12 @@ FRIENDLY_NAME="kube-app"
 DOCKER_BUILD="docker build -t '${IMAGE_NAME}:development' ."
 eval "$DOCKER_BUILD"
 
-# DOCKER_RUN="docker run \
-             # -it \
-             # --rm \
-             # --init \
-             # --env NODE_ENV \
-             # --env AWS_ACCESS_KEY_ID \
-             # --env AWS_SECRET_ACCESS_KEY \
-             # --env AWS_SESSION_TOKEN \
-             # --env SUMO_ENDPOINT \
-             # --env DEBUG \
-             # --name ${FRIENDLY_NAME} \
-             # ${IMAGE_NAME}:development
+DOCKER_RUN="docker run \
+             -it \
+             --rm \
+             -p 3000:3000 \
+             --env NODE_ENV \
+             --name ${FRIENDLY_NAME} \
+             ${IMAGE_NAME}:development"
 
-# eval "$DOCKER_RUN"
+eval "$DOCKER_RUN"
