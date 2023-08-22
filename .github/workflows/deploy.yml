@@ -1,8 +1,10 @@
+#vi:syntax=yaml
 name: Create and publish a Docker image
 
 on:
   push:
     branches: ['release']
+
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
